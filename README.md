@@ -1,6 +1,6 @@
 # How are color-concept associations formed? 
 
-_Melissa A. Schoenlein & Karen B. Schloss
+_Melissa A. Schoenlein & Karen B. Schloss_
 
 Overview of paper
 
