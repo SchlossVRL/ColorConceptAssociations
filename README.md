@@ -11,6 +11,7 @@ Overview of paper
 ### Data files
 
 CATEGORY LEARNING: 
+
 `Exp1-catLearning` & `Exp2-catLearning`: stores the alien category learning data for each experiment.
 - `Subj`: participant number 
 - `Condition`: order/pairing of VR/PC & visual/auditory test
@@ -21,6 +22,7 @@ CATEGORY LEARNING:
 
 
 ASSOCIATION RATINGS: 
+
 `Exp1-associations` & `Exp2-associations`:
 - `Subj`: participant number 
 - `Condition`: order/pairing of VR/PC & visual/auditory test
@@ -31,6 +33,7 @@ ASSOCIATION RATINGS:
 
 
 SUPPLEMENTAL DATA: 
+
 `Pilot-associations`:
 `GoodFit-associations`:
 
