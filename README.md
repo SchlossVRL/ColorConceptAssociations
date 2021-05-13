@@ -12,7 +12,7 @@ Overview of paper
 
 CATEGORY LEARNING: 
 
-`Exp1-catLearning` & `Exp2-catLearning`: stores the alien category learning data for each experiment.
+`Exp1-catLearning` & `Exp2-catLearning`: store the alien category learning data for each experiment. Columns for each include: 
 - `Subj`: participant number 
 - `Condition`: order/pairing of VR/PC & visual/auditory test
       - 2DV3DA = Visual system on PC then auditory system in VR
@@ -23,7 +23,7 @@ CATEGORY LEARNING:
 
 ASSOCIATION RATINGS: 
 
-`Exp1-associations` & `Exp2-associations`:
+`Exp1-associations` & `Exp2-associations`: store the association rating data for each experiment. Columns for each include: 
 - `Subj`: participant number 
 - `Condition`: order/pairing of VR/PC & visual/auditory test
       - 2DV3DA = Visual system on PC then auditory system in VR
@@ -34,11 +34,14 @@ ASSOCIATION RATINGS:
 
 SUPPLEMENTAL DATA: 
 
-`Pilot-associations`:
-`GoodFit-associations`:
+`Pilot-associations`: stores the data for the Pilot experiment. Columns include: 
+
+`GoodFit-associations`: stores the data for the Goodness-of-fit experiment. Columns include: 
+
 
 
 ### R scripts
+
 
 
 
