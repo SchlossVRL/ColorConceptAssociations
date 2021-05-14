@@ -19,7 +19,7 @@ CATEGORY LEARNING:
 
 ASSOCIATION RATINGS: 
 
-`Exp1-associations` & `Exp2-associations`: store the association rating data for each experiment. Columns for each include: 
+`Exp1-associations`: store the association rating data for each experiment. Columns for each include: 
 - `Subj`: participant number 
 - `Ratings`: Association rating averaged over two presentations of a given color [range: 0-1] 
 - `ColorID`: Hue of color 
@@ -49,7 +49,28 @@ ASSOCIATION RATINGS:
 - `deltaEC`: Euclidean distance from the seen color for a given color category, mean centered [range: ]
 
 
-
+ `Exp2-associations`:  store the association rating data for each experiment. Columns for each include: 
+- `Subj`: participant number 
+- `Ratings`: Association rating averaged over two presentations of a given color [range: 0-1] 
+- `ColorID`: Hue of color 
+- `ColorProtoF`: Hue of color and whether it was a prototype (P) or non-prototype (NP)
+- `ProtoStr`: whether a color was a prototype (proto), non-prototype (non-proto) or achromatic (achr)
+- 
+- `NameC`: Filk (0.5) or Slub (-0.5) species
+- `WarmCoolSet`: Warm-biased species (1) or cool-biased species (-1)
+- `Freq`: Co-occurrence frequency [range: 1-5]
+- `FreqC`: Co-occurrence frequency mean centered [range: -2 to 2]
+- `FreqSet`: Co-occcurrence frequency
+- `WarmFreq`: Co-occurrence frequency with respect to the warm-biased species [range: 1-5]
+- `WarmFreqC`: Co-occurrence frequency with respect to the warm-biased species, mean centered [range: -2 to 2]
+- `Condition`: saw prototypes (.5) vs. saw non-prototypes during alien category learning: 
+- `UsedColorC`: responses to strategy questionnaire - participants who reported using color (0.5) vs. those who did not report using colors (-0.5) during the alien category learning task
+- `NoticedColorStr`: responses to color patterns questionnaire - noticers vs. non-noticers
+- `NoticedColorC`: responses to color patterns questionnaire - noticers (0.5) vs. non-noticers (-0.5)
+- `ExposureStr`: whether the given color was seen during alien category learning
+- `ExposureC`: whether the given color was seen (0.5) vs. unseen (-0.5) during alien category learning
+- `deltaE`: Euclidean distance from the seen color for a given color category [range: 0 - 63]
+- `deltaEC`: Euclidean distance from the seen color for a given color category, mean centered [range: ]
 
 
 
