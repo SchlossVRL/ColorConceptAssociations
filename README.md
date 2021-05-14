@@ -14,18 +14,45 @@ CATEGORY LEARNING:
 
 `Exp1-catLearning` & `Exp2-catLearning`: store the alien category learning data for each experiment. Columns for each include: 
 - `Subj`: participant number 
-- `Condition`: order/pairing of VR/PC & visual/auditory test
-      - 2DV3DA = Visual system on PC then auditory system in VR
-      - 3DV2DA = Visual system in VR then auditory system on PC 
-      - 2DA3DV = Auditory system on PC then visual system in VR
-      - 3DA2DV = Auditory system in VR then visual system on PC
+- `Ratings`: Association ratings [range: 0-1] 
 
 
 ASSOCIATION RATINGS: 
 
 `Exp1-associations` & `Exp2-associations`: store the association rating data for each experiment. Columns for each include: 
 - `Subj`: participant number 
-- `Condition`: order/pairing of VR/PC & visual/auditory test
+- `Ratings`: Association rating averaged over two presentations of a given color [range: 0-1] 
+- `ColorID`: Hue of color 
+- `ColorSetStr`: BCP classifications of colors as saturated, light, muted, or dark
+- `NameC`: Filk (0.5) or Slub (-0.5) species
+- `WarmCoolSet`: Warm-biased species (1) or cool-biased species (-1)
+- `Freq`: Co-occurrence frequency [range: 1-5]
+- `FreqC`: Co-occurrence frequency mean centered [range: -2 to 2]
+- `FreqSet`: Co-occcurrence frequency
+- `WarmFreq`: Co-occurrence frequency with respect to the warm-biased species [range: 1-5]
+- `WarmFreqC`: Co-occurrence frequency with respect to the warm-biased species, mean centered [range: -2 to 2]
+- `NameColorC`: pairing of species name & color distribution [warm-biased Filks/cool-biased Slubs (0.5) vs. cool-biased Filks/warm-biased Slubs (-0.5)]
+- `NameShapeC`: pairing of species name & body shape [good fit: pointy Filks/curvy Slubs (0.5) vs. bad fit: curvy Filks/pointy Slubs (-0.5)]
+- `ShapeColorC`: pairing of shape & color distribution [good fit: warm-biased pointy bodies/cool-biased curvy bodies (0.5) vs. bad fit: cool-biased point bodies/warm-biased curvy bodies (-0.5)]
+- `Condition`: goodness-of-fit conditions: 
+
+      - 1: good shape-name fit & good shape-color fit
+      - 2: bad shape-name fit & bad shape-color fit
+      - 3: good shape-name fit & bad shape-color fit
+      - 4: bad shape-name fit & good shape-color fit
+- `UsedColorC`: responses to strategy questionnaire - participants who reported using color (0.5) vs. those who did not report using colors (-0.5) during the alien category learning task
+- `NoticedColorStr`: responses to color patterns questionnaire - noticers vs. non-noticers
+- `NoticedColorC`: responses to color patterns questionnaire - noticers (0.5) vs. non-noticers (-0.5)
+- `ExposureStr`: whether the given color was seen during alien category learning
+- `ExposureC`: whether the given color was seen (0.5) vs. unseen (-0.5) during alien category learning
+- `deltaE`: Euclidean distance from the seen color for a given color category [range: 0 - 63]
+- `deltaEC`: Euclidean distance from the seen color for a given color category, mean centered [range: ]
+
+
+
+
+
+
 
 
 SUPPLEMENTAL DATA: 
