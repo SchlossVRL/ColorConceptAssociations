@@ -28,9 +28,6 @@ ASSOCIATION RATINGS:
 - `WarmCoolSet`: Warm-biased species (1) or cool-biased species (-1)
 - `Freq`: Co-occurrence frequency [range: 1-5]
 - `FreqC`: Co-occurrence frequency mean centered [range: -2 to 2]
-- `FreqSet`: Co-occcurrence frequency
-- `WarmFreq`: Co-occurrence frequency with respect to the warm-biased species [range: 1-5]
-- `WarmFreqC`: Co-occurrence frequency with respect to the warm-biased species, mean centered [range: -2 to 2]
 - `NameColorC`: species name & color distribution [warm-biased Filks/cool-biased Slubs (0.5) vs. cool-biased Filks/warm-biased Slubs (-0.5)]
 - `NameShapeC`: species name & body shape [good fit: pointy Filks/curvy Slubs (0.5) vs. bad fit: curvy Filks/pointy Slubs (-0.5)]
 - `ShapeColorC`: shape & color distribution [good fit: warm-biased pointy/cool-biased curvy (0.5) vs. bad fit: cool-biased pointy/warm-biased curvy(-0.5)]
@@ -40,7 +37,7 @@ ASSOCIATION RATINGS:
        3: good shape-name fit & bad shape-color fit
        4: bad shape-name fit & good shape-color fit
 - `UsedColorC`: responses to strategy questionnaire - participants who reported using color (0.5) vs. those who did not report using colors (-0.5) during the alien category learning task
-- `NoticedColorStr`: responses to color patterns questionnaire - noticers vs. non-noticers
+- `NoticedColorStr`: responses to color patterns questionnaire - "noticers" vs. "non-noticers"
 - `NoticedColorC`: responses to color patterns questionnaire - noticers (0.5) vs. non-noticers (-0.5)
 - `ExposureStr`: whether the given color was seen during alien category learning
 - `ExposureC`: whether the given color was seen (0.5) vs. unseen (-0.5) during alien category learning
