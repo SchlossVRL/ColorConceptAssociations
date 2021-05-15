@@ -7,7 +7,7 @@ Overview of paper
 
 
 
-## FOLDER: DataFiles
+
 ### Data files
 
 CATEGORY LEARNING: 
@@ -72,8 +72,6 @@ ASSOCIATION RATINGS:
 
 SUPPLEMENTAL DATA: 
 
-`Pilot-associations`: stores the data for the Pilot experiment. Columns include: 
-
 `GoodFit-ColorName`: stores the data for the Goodness-of-fit color-name association task. Columns include: 
 
 `GoodFit-ShapeColor`: stores the data for the Goodness-of-fit shape-color association task. Columns include: 
@@ -87,6 +85,6 @@ SUPPLEMENTAL DATA:
 `CCAssociations`: Code for LMER analyses and plotting for all experiments (Exp. 1 & 2, Pilot, and Goodness-of-fit)
 
 
-## FOLDER: stimuli
+
 
 
