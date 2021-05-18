@@ -34,7 +34,16 @@ CATEGORY LEARNING:
 
 `Exp2-catLearning`: stores the alien category learning data for Experiment 1. Columns include: 
 - `Subj`: participant number 
-- `Ratings`: Association ratings [range: 0-1] 
+- `TypicalityStr`: saw prototypes (Saw P) vs. saw non-prototypes (Saw NP) during alien category learning: 
+- `TypicalityC`: saw prototypes (.5) vs. saw non-prototypes during alien category learning 
+- `Trial`: trial number in experiment [range: 9-731, only 180 total trials]
+- `TrialBin`: trials binned by every 30 [range: 1-6]
+- `stimulus`: which alien body was presented during that trial
+- `Correct`: whether the response was correct (1) or incorrect (0) to classify the alien
+- `totalCorrect`: total number of correct trials for a given participant [range: 0-180]
+- `NoticedColor`: responses to color patterns questionnaire - noticers (1) vs. non-noticers (0)
+- `UsedColor`: responses to strategy questionnaire - participants who reported using color (1) vs. those who did not report using colors (0) during the alien category learning task
+
 
 
 ASSOCIATION RATINGS: 
@@ -79,7 +88,7 @@ ASSOCIATION RATINGS:
 - `FreqInFreqC`: Whether color was seen frequently (.5), infrequently (-.5), or never (0) during alien category learning
 - `Freq`: Co-occurrence frequency [range: 1-5]
 - `TypicalityStr`: saw prototypes (Saw P) vs. saw non-prototypes (Saw NP) during alien category learning: 
-- `TypicalityC`: saw prototypes (.5) vs. saw non-prototypes during alien category learning: 
+- `TypicalityC`: saw prototypes (.5) vs. saw non-prototypes during alien category learning 
 - `NoticedColorStr`: responses to color patterns questionnaire - "noticers" vs. "non-noticers"
 - `NoticedColorC`: responses to color patterns questionnaire - noticers (0.5) vs. non-noticers (-0.5)
 - `ExposureStr`: whether the given color was seen during alien category learning
