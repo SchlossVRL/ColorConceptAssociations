@@ -10,41 +10,6 @@ Overview of paper
 
 ### Data files
 
-CATEGORY LEARNING: 
-
-`Exp1-catLearning`: stores the alien category learning data for Experiment 1. Columns include: 
-- `Subj`: participant number 
-- `ShapeNameC`: species name & body shape [good fit: pointy Filks/curvy Slubs (0.5) vs. bad fit: curvy Filks/pointy Slubs (-0.5)]
-- `ShapeColorC`: shape & color distribution [good fit: warm-biased pointy/cool-biased curvy (0.5) vs. bad fit: cool-biased pointy/warm-biased curvy(-0.5)]
-- `Condition`: goodness-of-fit conditions: 
-       (1) good shape-name fit & good shape-color fit;
-       (2) good shape-name fit & bad shape-color fit;
-       (3) bad shape-name fit & good shape-color fit;
-       (4) bad shape-name fit & bad shape-color fit
-- `Trial`: trial number in experiment [range: 1-240]
-- `TrialBin`: trials binned by every 40 [range: 1-6]
-- `ResponseTime`: response time in ms
-- `bodyShape`: pointy shape (1) or curvy shaped (2) alien body
-- `Response`: participants left (1) or right (2) button press to categorize the alien
-- `Correct`: whether the response was correct (1) or incorrect (0) to classify the alien
-- `totalCorrect`: total number of correct trials for a given participant [range: 0-240]
-- `NoticedColorStr`: responses to color patterns questionnaire - "noticers" vs. "non-noticers"
-- `NoticedColorC`: responses to color patterns questionnaire - noticers (0.5) vs. non-noticers (-0.5)
-
-
-`Exp2-catLearning`: stores the alien category learning data for Experiment 1. Columns include: 
-- `Subj`: participant number 
-- `TypicalityStr`: saw prototypes (Saw P) vs. saw non-prototypes (Saw NP) during alien category learning: 
-- `TypicalityC`: saw prototypes (.5) vs. saw non-prototypes during alien category learning 
-- `Trial`: trial number in experiment [range: 9-731, only 180 total trials]
-- `TrialBin`: trials binned by every 30 [range: 1-6]
-- `stimulus`: which alien body was presented during that trial
-- `Correct`: whether the response was correct (1) or incorrect (0) to classify the alien
-- `totalCorrect`: total number of correct trials for a given participant [range: 0-180]
-- `NoticedColor`: responses to color patterns questionnaire - noticers (1) vs. non-noticers (0)
-- `UsedColor`: responses to strategy questionnaire - participants who reported using color (1) vs. those who did not report using colors (0) during the alien category learning task
-
-
 
 ASSOCIATION RATINGS: 
 
@@ -97,6 +62,42 @@ ASSOCIATION RATINGS:
 
 
 
+CATEGORY LEARNING: 
+
+`Exp1-catLearning`: stores the alien category learning data for Experiment 1. Columns include: 
+- `Subj`: participant number 
+- `ShapeNameC`: species name & body shape [good fit: pointy Filks/curvy Slubs (0.5) vs. bad fit: curvy Filks/pointy Slubs (-0.5)]
+- `ShapeColorC`: shape & color distribution [good fit: warm-biased pointy/cool-biased curvy (0.5) vs. bad fit: cool-biased pointy/warm-biased curvy(-0.5)]
+- `Condition`: goodness-of-fit conditions: 
+       (1) good shape-name fit & good shape-color fit;
+       (2) good shape-name fit & bad shape-color fit;
+       (3) bad shape-name fit & good shape-color fit;
+       (4) bad shape-name fit & bad shape-color fit
+- `Trial`: trial number in experiment [range: 1-240]
+- `TrialBin`: trials binned by every 40 [range: 1-6]
+- `ResponseTime`: response time in ms
+- `bodyShape`: pointy shape (1) or curvy shaped (2) alien body
+- `Response`: participants left (1) or right (2) button press to categorize the alien
+- `Correct`: whether the response was correct (1) or incorrect (0) to classify the alien
+- `totalCorrect`: total number of correct trials for a given participant [range: 0-240]
+- `NoticedColorStr`: responses to color patterns questionnaire - "noticers" vs. "non-noticers"
+- `NoticedColorC`: responses to color patterns questionnaire - noticers (0.5) vs. non-noticers (-0.5)
+
+
+`Exp2-catLearning`: stores the alien category learning data for Experiment 1. Columns include: 
+- `Subj`: participant number 
+- `TypicalityStr`: saw prototypes (Saw P) vs. saw non-prototypes (Saw NP) during alien category learning: 
+- `TypicalityC`: saw prototypes (.5) vs. saw non-prototypes during alien category learning 
+- `Trial`: trial number in experiment [range: 9-731, only 180 total trials]
+- `TrialBin`: trials binned by every 30 [range: 1-6]
+- `stimulus`: which alien body was presented during that trial
+- `Correct`: whether the response was correct (1) or incorrect (0) to classify the alien
+- `totalCorrect`: total number of correct trials for a given participant [range: 0-180]
+- `NoticedColor`: responses to color patterns questionnaire - noticers (1) vs. non-noticers (0)
+- `UsedColor`: responses to strategy questionnaire - participants who reported using color (1) vs. those who did not report using colors (0) during the alien category learning task
+
+
+
 
 
 SUPPLEMENTAL DATA: 
@@ -111,7 +112,7 @@ SUPPLEMENTAL DATA:
 
 ### R scripts
 
-`CCAssociations`: Code for LMER analyses and plotting for all experiments (Exp. 1 & 2, Pilot, and Goodness-of-fit)
+`CCAssociations`: Code for LMER analyses and plotting for all experiments (Exps. 1 & 2, and Goodness-of-fit)
 
 
 
