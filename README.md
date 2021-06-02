@@ -2,9 +2,7 @@
 
 _Melissa A. Schoenlein & Karen B. Schloss_
 
-Overview of paper
-
-
+Color-concept associations influence fundamental processes in cognition and perception including object recognition, color perception, and visual reasoning. To understand these effects, it is necessary to understand how color-concept associations are formed in the first place. It is assumed that color-concept associations are learned through experiences in the world, but questions remain concerning how association formation is influenced by properties of the input and cognitive factors during exposure to that input. We addressed these questions by first exposing participants to color-concept co-occurrences for novel concepts using a category learning task and then assessing color-concept associations. Critically, color was a noisy cue during category learning and shape was 100% diagnostic, so participants could have ignored color to complete the task. We found that participants learned systematic color-concept associations for “seen” colors during category learning and generalized to other “unseen” colors depending on color distance from the seen colors. However, the nature of those associations depended on whether participants noticed color-related patterns during category learning. We also found that formed associations depended on cognitive structure of color categories. Thus, people are not merely “statistics detectors”; multiple environmental and cognitive factors combine to influence color-concept associations. 
 
 
 
