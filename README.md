@@ -101,10 +101,35 @@ CATEGORY LEARNING:
 SUPPLEMENTAL DATA: 
 
 `GoodFit-ColorName`: stores the data for the Goodness-of-fit color-name association task. Columns include: 
+- `Subj`: participant number 
+- `Ratings`: Association rating averaged over two presentations of a given color for each name [range: 0-1] 
+- `ColorID`: Hue of color 
+- `Sat.Light`: Whether color was saturated (1), light (2), muted (3), or dark (4) according to the BCP classifications
+- `Warmness`: how warm vs. cool a color was [range: 1 (cyan) to 5 (orange)]
+- `WarmnessC`: how warm vs. cool a color was, mean centered [range: -2 (cyan) to 2 (orange)]
+- `NameStr`: FILK or SLUB
+- `NameC`: Filk (0.5) or Slub (-0.5) species
+
 
 `GoodFit-ShapeColor`: stores the data for the Goodness-of-fit shape-color association task. Columns include: 
+- `Subj`: participant number 
+- `Ratings`: Association rating for a given color and body shape [range: 0-1] 
+- `ColorID`: Hue of color 
+- `BodyNum`: Which specific body shape was presented [range: 1 to 5]
+- `ShapeStr`: Pointy vs. Curvy body shapes
+- `ShapeC`: Pointy (-.5) vs. curvy (.5) body shapes
+- `Warmness`: how warm vs. cool a color was [range: 1 (cyan) to 5 (orange)]
+- `WarmnessC`: how warm vs. cool a color was, mean centered [range: -2 (cyan) to 2 (orange)]
+
 
 `GoodFit-ShapeName`: stores the data for the Goodness-of-fit shape-name color association task. Columns include: 
+- `Subj`: participant number 
+- `Ratings`: Association rating for the given name & body shape [range: 0-1] 
+- `NameC`: Filk (0.5) or Slub (-0.5) species
+- `ShapeC`: Pointy (-.5) vs. curvy (.5) body shapes
+- `LegType`: which of the five leg types the given alien had [range: 1 to 5]
+- `BodyNum`: Which specific body shape was presented [range: 1 to 5]
+- `ShapeStr`: Pointy vs. Curvy body shapes
 
 
 
