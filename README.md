@@ -138,6 +138,12 @@ SUPPLEMENTAL DATA:
 `CCAssociations`: Code for LMER analyses and plotting for all experiments (Exps. 1 & 2, and Goodness-of-fit)
 
 
+### Materials
 
+`Experiment1ColorCoordinates`: Color coordinates for BCP-32 colors used in Experiment 1. 
+
+`Experiment2ColorCoordinates`: Color coordinates for prototypical and non-prototypical colors used in Experiment 2. 
+
+`Materials folder`: Alien stimuli
 
 
