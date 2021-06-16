@@ -144,6 +144,6 @@ SUPPLEMENTAL DATA:
 
 `Experiment2ColorCoordinates`: Color coordinates for prototypical and non-prototypical colors used in Experiment 2. 
 
-`Materials folder`: Alien stimuli
+`Alien Shapes`: Alien stimuli used for both experiments. Shown here in black.
 
 
