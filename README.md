@@ -1,8 +1,8 @@
-# How are color-concept associations formed? 
+# Color-concept association formation for novel concepts 
 
 _Melissa A. Schoenlein & Karen B. Schloss_
 
-Color-concept associations influence fundamental processes in cognition and perception including object recognition, color perception, and visual reasoning. To understand these effects, it is necessary to understand how color-concept associations are formed in the first place. It is assumed that color-concept associations are learned through experiences in the world, but questions remain concerning how association formation is influenced by properties of the input and cognitive factors during exposure to that input. We addressed these questions by first exposing participants to color-concept co-occurrences for novel concepts using a category learning task and then assessing color-concept associations. Critically, color was a noisy cue during category learning and shape was 100% diagnostic, so participants could have ignored color to complete the task. We found that participants learned systematic color-concept associations for “seen” colors during category learning and generalized to other “unseen” colors depending on color distance from the seen colors. However, the nature of those associations depended on whether participants noticed color-related patterns during category learning. We also found that formed associations depended on cognitive structure of color categories. Thus, people are not merely “statistics detectors”; multiple environmental and cognitive factors combine to influence color-concept associations. 
+Color-concept associations influence fundamental processes in cognition and perception, including object recognition and visual reasoning. To understand these effects, it is necessary to understand how color-concept associations are formed. It is assumed that color-concept associations are learned through experiences, but questions remain concerning how association formation is influenced by properties of the input and cognitive factors. We addressed these questions by first exposing participants to color-concept co-occurrences for novel concepts (“Filk” and “Slub” alien species) using a category learning task. We then assessed color-concept associations using an association rating task. During alien category learning, color was a noisy cue and shape was 100% diagnostic of category membership, so participants could ignore color to complete the task. Nonetheless, participants learned systematic color-concept associations for “seen” colors during alien category learning and generalized to “unseen” colors as a function of color distance from the seen colors (Experiment 1). Association formation not only depended on color-alien co-occurrences during alien category learning, but also on cognitive structure of color categories (e.g., degree to which an observed red color is typical of the color category “red”) (Experiment 2). Thus, environmental and cognitive factors combine to influence color-concept associations formed from experiences in the world. 
 
 
 
@@ -14,9 +14,12 @@ ASSOCIATION RATINGS:
 `Exp1-associations`: store the association rating data for Experiment 1. Columns include: 
 - `Subj`: participant number 
 - `Ratings`: Association rating averaged over two presentations of a given color [range: 0-1] 
-- `ColorID`: Hue of color 
+- `ColorID`: Hue of color (full word)
+- `ColorIDF`: Hue of color (first letter)
 - `ColorSetStr`: BCP classifications of colors as "saturated", "light", "muted", or "dark"
+- `Sat.Light`: numeric ID corresponding to BCP classifications of colors as saturated (1), light (2), muted (3), or dark (4)
 - `NameC`: Filk (0.5) or Slub (-0.5) species
+- `NameStr`: "Filk" or "Slub"
 - `WarmCoolSet`: Warm-biased species (1) or cool-biased species (-1)
 - `Freq`: Co-occurrence frequency [range: 1-5]
 - `FreqC`: Co-occurrence frequency mean centered [range: -2 to 2]
@@ -34,6 +37,19 @@ ASSOCIATION RATINGS:
 - `ExposureC`: whether the given color was seen (0.5) vs. unseen (-0.5) during alien category learning
 - `deltaE`: Euclidean distance from the seen color for a given color category [range: 0 - 63]
 - `deltaEC`: Euclidean distance from the seen color for a given color category, mean centered [range: -28 to 35]
+- `ID`: numeric ID corresponding to specific BCP color
+- `Hex`: hex code corresponding to specific BCP color
+- `Warmness`: how warm vs. cool a color was [range: 1 (cyan) to 5 (orange)]
+- `WarmnessC`: how warm vs. cool a color was, mean centered [range: -2 (cyan) to 2 (orange)]
+- `group`: whether experiment (.5) or baseline data (-.5) [used to compare with goodness-of-fit baseline in supplemental materials]
+- `groupStr`: whether experiment (exp) or baseline data (baseline) [used to compare with goodness-of-fit baseline in supplemental materials]
+- `x`: x color coordinate
+- `y`: y color coordinate
+- `Y`: Y color coordinate
+- `L`: L* color coordinate
+- `a`: a* color coordinate
+- `b`: b* color coordinate
+- `LightC`: L* color coordinate centered
 
 
 
@@ -103,12 +119,15 @@ SUPPLEMENTAL DATA:
 `GoodFit-ColorName`: stores the data for the Goodness-of-fit color-name association task. Columns include: 
 - `Subj`: participant number 
 - `Ratings`: Association rating averaged over two presentations of a given color for each name [range: 0-1] 
-- `ColorID`: Hue of color 
+- `ColorIDF`: Hue of color 
 - `Sat.Light`: Whether color was saturated (1), light (2), muted (3), or dark (4) according to the BCP classifications
 - `Warmness`: how warm vs. cool a color was [range: 1 (cyan) to 5 (orange)]
 - `WarmnessC`: how warm vs. cool a color was, mean centered [range: -2 (cyan) to 2 (orange)]
+- `LightC`: L* color coordinate centered
 - `NameStr`: FILK or SLUB
 - `NameC`: Filk (0.5) or Slub (-0.5) species
+- `group`: whether experiment (.5) or baseline data (-.5) [used to compare with Experiment 1 data in supplemental materials]
+- `groupStr`: whether experiment (exp) or baseline data (baseline) [used to compare with Experiment 1 data in supplemental materials]
 
 
 `GoodFit-ShapeColor`: stores the data for the Goodness-of-fit shape-color association task. Columns include: 
