@@ -154,7 +154,7 @@ SUPPLEMENTAL DATA:
 
 ### R scripts
 
-`CCAssociations`: Code for LMER analyses and plotting for all experiments (Exps. 1 & 2, and Goodness-of-fit)
+`CCAssociations-vF`: Code for LMER analyses and plotting for all experiments and Supplemental Materials
 
 
 ### Materials
